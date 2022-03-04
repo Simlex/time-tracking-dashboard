@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+  
+  <div class="theme-box">
+    <p>Change Theme</p>
+  </div>
+
+  <div class="grouping">
+
+
+  <div class="section-header">
+    <div class="header">
+
+      <div class="details">
+        <img src="./images/image-jeremy.png" alt="Profile picture"> 
+        <div class="details__text">
+          <p class="details__text--title">Report for</p>
+          <p class="details__text--name">Jeremy Robson</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="times">
+      <a href="#">Daily</a>
+      <a href="#">Weekly</a>
+      <a href="#">Monthly</a>
+      <!-- <span>Daily</span>
+      <span>Weekly</span>
+      <span>Monthly</span> -->
+    </div>
+
+  </div>
+
+
+
+  <!-- ----------------- weekly ------------------- -->
+
+
+  <div class="section-weekly hide">
+
+    <div class="section-weekly__card work">
+      <div class="image">
+      <img src="./images/icon-work.svg" alt="">
+      </div>
+
+      <div class="card-details">
+        <div class="title">
+          <p>Work</p>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+            fill="#BBC0FF" fill-rule="evenodd"/>
+          </svg>
+        </div>
+        <div class="time">
+          <p>32hrs</p>
+          <span>Last Week - 36hrs</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-weekly__card play">
+      <div class="image">
+      <img src="./images/icon-play.svg" alt="">
+      </div>
+
+      <div class="card-details">
+        <div class="title">
+          <p>Play</p>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+            fill="#BBC0FF" fill-rule="evenodd"/>
+          </svg>
+        </div>
+        <div class="time">
+          <p>10hrs</p>
+          <span>Last Week - 8hrs</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-weekly__card study">
+      <div class="image">
+      <img src="./images/icon-study.svg" alt="">
+      </div>
+
+      <div class="card-details">
+        <div class="title">
+          <p>Study</p>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+            fill="#BBC0FF" fill-rule="evenodd"/>
+          </svg>
+        </div>
+        <div class="time">
+          <p>4hrs</p>
+          <span>Last Week - 7hrs</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-weekly__card exercise">
+      <div class="image">
+      <img src="./images/icon-exercise.svg" alt="">
+      </div>
+
+      <div class="card-details">
+        <div class="title">
+          <p>Exercise</p>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+            fill="#BBC0FF" fill-rule="evenodd"/>
+          </svg>
+        </div>
+        <div class="time">
+          <p>4hrs</p>
+          <span>Last Week - 5hrs</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-weekly__card social">
+      <div class="image">
+      <img src="./images/icon-social.svg" alt="">
+      </div>
+
+      <div class="card-details">
+        <div class="title">
+          <p>Social</p>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+            fill="#BBC0FF" fill-rule="evenodd"/>
+          </svg>
+        </div>
+        <div class="time">
+          <p>5hrs</p>
+          <span>Last Week - 10hrs</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-weekly__card self-care">
+      <div class="image">
+      <img src="./images/icon-self-care.svg" alt="">
+      </div>
+
+      <div class="card-details">
+        <div class="title">
+          <p>Self Care</p>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+            fill="#BBC0FF" fill-rule="evenodd"/>
+          </svg>
+        </div>
+        <div class="time">
+          <p>2hrs</p>
+          <span>Last Week - 2hrs</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <!-- ----------------- daily ------------------- -->
+
+
+
+  <div class="section-daily hide">
+
+    <div class="section-daily__card work">
+      <div class="image">
+      <img src="./images/icon-work.svg" alt="">
+      </div>
+
+      <div class="card-details">
+        <div class="title">
+          <p>Work</p>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+            fill="#BBC0FF" fill-rule="evenodd"/>
+          </svg>
+        </div>
+        <div class="time">
+          <p>5hrs</p>
+          <span>Yesterday - 7hrs</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-daily__card play">
+      <div class="image">
+      <img src="./images/icon-play.svg" alt="">
+      </div>
+
+      <div class="card-details">
+        <div class="title">
+          <p>Play</p>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+            fill="#BBC0FF" fill-rule="evenodd"/>
+          </svg>
+        </div>
+        <div class="time">
+          <p>1hr</p>
+          <span>Yesterday - 2hrs</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-daily__card study">
+      <div class="image">
+      <img src="./images/icon-study.svg" alt="">
+      </div>
+
+      <div class="card-details">
+        <div class="title">
+          <p>Study</p>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+            fill="#BBC0FF" fill-rule="evenodd"/>
+          </svg>
+        </div>
+        <div class="time">
+          <p>0hrs</p>
+          <span>Yesterday - 1hr</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-daily__card exercise">
+      <div class="image">
+      <img src="./images/icon-exercise.svg" alt="">
+      </div>
+
+      <div class="card-details">
+        <div class="title">
+          <p>Exercise</p>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+            fill="#BBC0FF" fill-rule="evenodd"/>
+          </svg>
+        </div>
+        <div class="time">
+          <p>1hr</p>
+          <span>Yesterday - 1hr</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-daily__card social">
+      <div class="image">
+      <img src="./images/icon-social.svg" alt="">
+      </div>
+
+      <div class="card-details">
+        <div class="title">
+          <p>Social</p>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+            fill="#BBC0FF" fill-rule="evenodd"/>
+          </svg>
+        </div>
+        <div class="time">
+          <p>1hr</p>
+          <span>Yesterday - 3hrs</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-daily__card self-care">
+      <div class="image">
+      <img src="./images/icon-self-care.svg" alt="">
+      </div>
+
+      <div class="card-details">
+        <div class="title">
+          <p>Self Care</p>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+            fill="#BBC0FF" fill-rule="evenodd"/>
+          </svg>
+        </div>
+        <div class="time">
+          <p>0hrs</p>
+          <span>Yesterday - 1hr</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ----------------- monthly ------------------- -->
+
+
+
+  <div class="section-monthly">
+
+    <div class="section-monthly__card work">
+      <div class="image">
+      <img src="./images/icon-work.svg" alt="">
+      </div>
+
+      <div class="card-details">
+        <div class="title">
+          <p>Work</p>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+            fill="#BBC0FF" fill-rule="evenodd"/>
+          </svg>
+        </div>
+        <div class="time">
+          <p>103hrs</p>
+          <span>Last Month - 128hrs</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-monthly__card play">
+      <div class="image">
+      <img src="./images/icon-play.svg" alt="">
+      </div>
+
+      <div class="card-details">
+        <div class="title">
+          <p>Play</p>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+            fill="#BBC0FF" fill-rule="evenodd"/>
+          </svg>
+        </div>
+        <div class="time">
+          <p>23hrs</p>
+          <span>Last Month - 29hrs</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-monthly__card study">
+      <div class="image">
+      <img src="./images/icon-study.svg" alt="">
+      </div>
+
+      <div class="card-details">
+        <div class="title">
+          <p>Study</p>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+            fill="#BBC0FF" fill-rule="evenodd"/>
+          </svg>
+        </div>
+        <div class="time">
+          <p>0hrs</p>
+          <span>Last Month - 1hr</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-monthly__card exercise">
+      <div class="image">
+      <img src="./images/icon-exercise.svg" alt="">
+      </div>
+
+      <div class="card-details">
+        <div class="title">
+          <p>Exercise</p>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+            fill="#BBC0FF" fill-rule="evenodd"/>
+          </svg>
+        </div>
+        <div class="time">
+          <p>11hrs</p>
+          <span>Last Month - 18hrs</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-monthly__card social">
+      <div class="image">
+      <img src="./images/icon-social.svg" alt="">
+      </div>
+
+      <div class="card-details">
+        <div class="title">
+          <p>Social</p>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+            fill="#BBC0FF" fill-rule="evenodd"/>
+          </svg>
+        </div>
+        <div class="time">
+          <p>21hrs</p>
+          <span>Last Month - 23hrs</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-monthly__card self-care">
+      <div class="image">
+      <img src="./images/icon-self-care.svg" alt="">
+      </div>
+
+      <div class="card-details">
+        <div class="title">
+          <p>Self Care</p>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 
+            0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+            fill="#BBC0FF" fill-rule="evenodd"/>
+          </svg>
+        </div>
+        <div class="time">
+          <p>7hrs</p>
+          <span>Last Month - 11hrs</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+    
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>

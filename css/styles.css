@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  scroll-behavior: smooth;
+}
+
+* a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #0D1323;
+}
+
+.theme-box {
+  position: absolute;
+  color: #CACDFF;
+  z-index: 9;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -20%);
+          transform: translate(-50%, -20%);
+  font-size: 10px;
+  background-color: #1D204B;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.theme-box:hover {
+  background-color: #CACDFF;
+  color: #0D1323;
+  -webkit-box-shadow: 2px 2px 15px -4px #888;
+          box-shadow: 2px 2px 15px -4px #888;
+}
+
+@media (min-width: 376px) {
+  .grouping {
+    /* background-color: #fff; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1110px;
+    height: 517px;
+    margin: 60px auto 30px;
+  }
+}
+
+.section-header {
+  width: 327px;
+  height: 203px;
+  background-color: #1D204B;
+  padding: 0 24px;
+  margin: 80px auto 24px;
+  border-radius: 14px;
+  position: relative;
+}
+
+.section-header__dark {
+  background-color: #fff;
+}
+
+@media (min-width: 376px) {
+  .section-header {
+    width: 255px;
+    height: 100%;
+    margin: 0;
+  }
+}
+
+.section-header .header {
+  position: absolute;
+  background-color: #5746EA;
+  width: 100%;
+  height: 133px;
+  top: 0;
+  right: 0;
+  border-radius: 14px;
+  padding: 32px 30px;
+}
+
+@media (min-width: 376px) {
+  .section-header .header {
+    height: 354px;
+  }
+}
+
+.section-header .header .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 376px) {
+  .section-header .header .details {
+    display: block;
+  }
+}
+
+.section-header .header .details img {
+  width: 66px;
+  height: 66px;
+  border: 3px solid #fff;
+  border-radius: 100px;
+  margin-right: 20px;
+}
+
+@media (min-width: 376px) {
+  .section-header .header .details img {
+    margin-bottom: 42px;
+  }
+}
+
+.section-header .header .details__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-header .header .details__text--title {
+  font-size: 16px;
+  color: #CACDFF;
+  font-weight: 300;
+}
+
+@media (min-width: 376px) {
+  .section-header .header .details__text--title {
+    margin-bottom: 14px;
+    font-size: 20px;
+  }
+}
+
+.section-header .header .details__text--name {
+  font-size: 20px;
+  color: #fff;
+}
+
+@media (min-width: 376px) {
+  .section-header .header .details__text--name {
+    font-weight: 300;
+    font-size: 30px;
+  }
+}
+
+.section-header .times {
+  position: absolute;
+  top: 80%;
+  right: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 12px;
+  /* :nth-child(2) {
+            color: #fff;
+        } */
+}
+
+@media (min-width: 376px) {
+  .section-header .times {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 30px;
+    top: 75%;
+  }
+}
+
+.section-header .times a {
+  color: #CACDFF;
+}
+
+@media (min-width: 376px) {
+  .section-header .times a {
+    padding: 6px;
+  }
+}
+
+.section-header .times a.active {
+  color: #fff;
+}
+
+.section-weekly, .section-daily, .section-monthly {
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+@media (min-width: 376px) {
+  .section-weekly, .section-daily, .section-monthly {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    width: 825px;
+    height: 100%;
+    margin: auto auto;
+  }
+}
+
+.section-weekly__card, .section-daily__card, .section-monthly__card {
+  width: 327px;
+  height: 160px;
+  margin: 0 auto 24px;
+  border-radius: 14px;
+  position: relative;
+}
+
+@media (min-width: 376px) {
+  .section-weekly__card, .section-daily__card, .section-monthly__card {
+    /* background-color: #fff; */
+    width: 255px;
+    height: 242px;
+    margin: 0;
+  }
+}
+
+.section-weekly__card .image, .section-daily__card .image, .section-monthly__card .image {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.section-weekly__card .image img, .section-daily__card .image img, .section-monthly__card .image img {
+  position: absolute;
+  right: 18px;
+  top: -4px;
+}
+
+.section-weekly__card .card-details, .section-daily__card .card-details, .section-monthly__card .card-details {
+  height: 122px;
+  width: 100%;
+  background-color: #1D204B;
+  color: #CACDFF;
+  position: absolute;
+  bottom: 0;
+  border-radius: 14px;
+  padding: 30px 24px;
+}
+
+.section-weekly__card .card-details:hover, .section-daily__card .card-details:hover, .section-monthly__card .card-details:hover {
+  background-color: #31345f;
+}
+
+@media (min-width: 376px) {
+  .section-weekly__card .card-details, .section-daily__card .card-details, .section-monthly__card .card-details {
+    height: 198px;
+  }
+}
+
+.section-weekly__card .card-details svg, .section-daily__card .card-details svg, .section-monthly__card .card-details svg {
+  cursor: pointer;
+}
+
+.section-weekly__card .card-details .title, .section-daily__card .card-details .title, .section-monthly__card .card-details .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+@media (min-width: 376px) {
+  .section-weekly__card .card-details .title, .section-daily__card .card-details .title, .section-monthly__card .card-details .title {
+    margin-bottom: 40px;
+  }
+}
+
+.section-weekly__card .card-details .time, .section-daily__card .card-details .time, .section-monthly__card .card-details .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 376px) {
+  .section-weekly__card .card-details .time, .section-daily__card .card-details .time, .section-monthly__card .card-details .time {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.section-weekly__card .card-details .time p, .section-daily__card .card-details .time p, .section-monthly__card .card-details .time p {
+  font-size: 24px;
+  font-weight: 300;
+  color: #fff;
+}
+
+@media (min-width: 376px) {
+  .section-weekly__card .card-details .time p, .section-daily__card .card-details .time p, .section-monthly__card .card-details .time p {
+    font-size: 41px;
+  }
+}
+
+.section-weekly .work, .section-daily .work, .section-monthly .work {
+  background-color: #FF8B64;
+}
+
+.section-weekly .play, .section-daily .play, .section-monthly .play {
+  background-color: #56C2E6;
+}
+
+.section-weekly .study, .section-daily .study, .section-monthly .study {
+  background-color: #FF5E7E;
+}
+
+.section-weekly .exercise, .section-daily .exercise, .section-monthly .exercise {
+  background-color: #4BCF83;
+}
+
+.section-weekly .social, .section-daily .social, .section-monthly .social {
+  background-color: #7235D1;
+}
+
+.section-weekly .self-care, .section-daily .self-care, .section-monthly .self-care {
+  background-color: #F1C75B;
+}
+
+.hide {
+  display: none;
+}
+
+.attribution {
+  color: #CACDFF;
+}
+
+.dark-theme-color {
+  color: #1D204B !important;
+}
+
+.dark-theme-color__100 {
+  color: #9598c3 !important;
+}
+
+.dark-theme-bg {
+  background-color: #ffffff !important;
+}
+
+.theme-bg-color {
+  background-color: #e4e4e4;
+}
+/*# sourceMappingURL=styles.css.map */
